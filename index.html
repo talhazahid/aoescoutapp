@@ -4,13 +4,13 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>AOE Scout App | Age of Empires Match Intelligence</title>
-    <meta name="description" content="AOE Scout is a match-intelligence companion for Age of Empires players, with opponent profiles, rank context, strategy signals, unit composition, and Auto-Queue villagers." />
-    <meta name="keywords" content="AOE Scout, Age of Empires app, Age of Empires 4 scouting, match intelligence, opponent scouting, Auto-Queue villagers" />
+    <meta name="description" content="AOE Scout provides Age of Empires II DE, III DE, and IV leaderboards, lobbies, civilization statistics, player and unit comparisons, cheats, opponent intelligence, and Auto Queue villagers." />
+    <meta name="keywords" content="AOE Scout, Age of Empires leaderboards, Age of Empires lobbies, civilization statistics, compare units, compare players, Age of Empires cheats, opponent intelligence, Auto Queue villagers" />
     <meta name="author" content="Talha Zahid" />
     <link rel="canonical" href="https://aoescout.com/" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="AOE Scout App | Age of Empires Match Intelligence" />
-    <meta property="og:description" content="A front-end showcase of AOE Scout: practical opponent intelligence for Age of Empires players." />
+    <meta property="og:description" content="Leaderboards, lobbies, civilization statistics, comparisons, cheats, player profiles, opponent intelligence, and Auto Queue villagers for Age of Empires players." />
     <meta property="og:url" content="https://github.com/talhazahid/aoescoutapp" />
     <meta property="og:image" content="screenshots/opponent-intelligence.png" />
     <meta name="twitter:card" content="summary_large_image" />
@@ -24,7 +24,18 @@
         "name": "AOE Scout",
         "applicationCategory": "GameApplication",
         "operatingSystem": "Web, Windows",
-        "description": "A match-intelligence companion for Age of Empires players.",
+        "description": "A player-intelligence and match-preparation companion for Age of Empires II DE, Age of Empires III DE, and Age of Empires IV.",
+        "featureList": [
+          "Ranked leaderboards",
+          "Live games and multiplayer lobbies",
+          "Civilization statistics",
+          "Unit comparison",
+          "Player comparison",
+          "Player profiles and match history",
+          "Opponent intelligence",
+          "Auto Queue villagers",
+          "Single-player cheat references"
+        ],
         "url": "https://aoescout.com/",
         "author": { "@type": "Person", "name": "Talha Zahid" },
         "sameAs": ["https://github.com/talhazahid/aoescoutapp"]
@@ -88,6 +99,7 @@
       .showcase img { display: block; width: 100%; height: auto; }
       .showcase--crop img { max-height: 720px; object-fit: cover; object-position: center top; }
       .feature-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+      .feature-grid--wide { grid-template-columns: repeat(2, 1fr); }
       .feature { padding: 24px; border: 1px solid var(--line); background: var(--panel); }
       .feature__index { color: var(--gold); font-size: 12px; }
       .feature h3 { margin: 18px 0 8px; font-size: 24px; }
@@ -106,7 +118,7 @@
         nav { justify-content: flex-start; gap: 12px 16px; }
         .hero { padding: 76px 0 64px; }
         .hero__copy { font-size: 17px; }
-        .proof-row, .split, .feature-grid, .footer__grid { grid-template-columns: 1fr; }
+        .proof-row, .split, .feature-grid, .feature-grid--wide, .footer__grid { grid-template-columns: 1fr; }
         .section { padding: 64px 0; }
         .quote { padding: 28px; }
         .footer__bottom { align-items: flex-start; flex-direction: column; }
@@ -119,6 +131,7 @@
         <a class="brand" href="#top" aria-label="AOE Scout App showcase home"><span class="brand-mark">AOE</span><span class="brand-name">Scout App</span></a>
         <nav aria-label="Showcase navigation">
           <a href="#overview">Overview</a>
+          <a href="#features">Features</a>
           <a href="#intelligence">Intelligence</a>
           <a href="#screenshots">Screenshots</a>
           <a href="https://aoescout.com/" rel="noreferrer">Live website ↗</a>
@@ -130,7 +143,7 @@
       <section class="hero shell" aria-labelledby="hero-title">
         <p class="eyebrow">Project showcase · Age of Empires</p>
         <h1 id="hero-title">Scout the opponent, not just the map.</h1>
-        <p class="hero__copy">AOE Scout is a match-intelligence companion that turns player profiles, rank context, civilizations, strategies, and unit composition into a practical read before the fight starts.</p>
+        <p class="hero__copy">AOE Scout brings Age of Empires II DE, III DE, and IV leaderboards, lobbies, civilization statistics, comparisons, cheats, player profiles, and opponent intelligence into one practical experience.</p>
         <div class="actions">
           <a class="button" href="https://aoescout.com/age-of-empires-4/pro-scout-ai" rel="noreferrer">Open the live Pro Scout AI ↗</a>
           <a class="button button--quiet" href="https://aoescout.com/" rel="noreferrer">Visit aoescout.com ↗</a>
@@ -157,6 +170,28 @@
             <div class="list-item"><strong>Recent strategies</strong><span>Readable timing signals such as Fast 2nd TC, Army 6+ units, and Fast Castle.</span></div>
             <div class="list-item"><strong>Unit composition</strong><span>Visual composition cards that make likely battlefield pressure easy to scan.</span></div>
             <div class="list-item"><strong>Live companion</strong><span>A Windows surface for match opponents, Auto-Queue villagers, and local game context.</span></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="features" class="section">
+        <div class="shell">
+          <div class="section__heading">
+            <p class="eyebrow">Explore AOE Scout</p>
+            <h2>One home for the details behind every match.</h2>
+            <p class="section__intro">Every feature keeps the terminology and data of its game while following one consistent interface across Age of Empires II DE, Age of Empires III DE, and Age of Empires IV.</p>
+          </div>
+          <div class="feature-grid feature-grid--wide">
+            <article class="feature"><span class="feature__index">01</span><h3>Leaderboards</h3><p>Browse ranked 1v1 and team ladders, plus game-specific modes such as Random Map, Empire Wars, Deathmatch, and Age of Empires IV console rankings. Open any available player directly from the standings for more context.</p></article>
+            <article class="feature"><span class="feature__index">02</span><h3>Live games and lobbies</h3><p>Follow matches currently in progress or browse available multiplayer rooms with useful details about players, maps, settings, and lobby capacity.</p></article>
+            <article class="feature"><span class="feature__index">03</span><h3>Civilization statistics</h3><p>Understand the current meta through civilization pick rates, win rates, match volume, ranked modes, maps, and the filters available for each supported game.</p></article>
+            <article class="feature"><span class="feature__index">04</span><h3>Compare units</h3><p>Place units side by side to understand cost, role, movement, durability, attack, armor, range, and other game-specific attributes without working through an oversized spreadsheet.</p></article>
+            <article class="feature"><span class="feature__index">05</span><h3>Compare players</h3><p>Compare current and highest ranks, rating or ELO, wins, losses, win rate, total matches, favorite civilizations, and available recent performance in one focused view.</p></article>
+            <article class="feature"><span class="feature__index">06</span><h3>Player profiles</h3><p>Review rank summaries, solo and team performance, match history, civilization preferences, recent games, and match details supported by each title.</p></article>
+            <article class="feature"><span class="feature__index">07</span><h3>Opponent intelligence</h3><p>Turn a profile into a quick pre-match read with ranks, ELO, recent strategy timings, economy averages, likely unit composition, and frequently played civilizations.</p></article>
+            <article class="feature"><span class="feature__index">08</span><h3>Auto Queue villagers</h3><p>Choose the Town Center and Queue Villager shortcuts and an interval. The optional Windows companion presses those selected keys at the scheduled time; it does not inject into or modify the game.</p></article>
+            <article class="feature"><span class="feature__index">09</span><h3>Single-player cheats</h3><p>Find searchable, plain-language cheat references for Age of Empires II, Age of Empires III, Age of Empires IV, and their Definitive Edition pages where applicable.</p></article>
+            <article class="feature"><span class="feature__index">10</span><h3>Web and Windows</h3><p>Use the website for discovery, statistics, comparisons, and profile research, then bring time-sensitive scouting and shortcut assistance closer to the match with the optional Windows companion.</p></article>
           </div>
         </div>
       </section>
