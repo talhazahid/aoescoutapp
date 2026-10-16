@@ -14,6 +14,15 @@ It brings rankings, active games, multiplayer lobbies, civilization performance,
 - Age of Empires IV: [aoescout.com/age-of-empires-4](https://aoescout.com/age-of-empires-4)
 - Contact and community: [aoescout.com/contact](https://aoescout.com/contact)
 
+## Latest interface update — 16 October 2026
+
+- Mobile profiles keep the player name, game and a direct Compare players button, without repeating profile links and IDs.
+- Solo rank history follows the solo card; team rank history follows the team card.
+- Matchup headings and civilization filters share consistent mobile side gutters.
+- Civilization lists explicitly label percentages as win rates and use the full available content width.
+
+See the [responsive HTML example](examples/mobile-profile.html) and [changelog](CHANGELOG.md). The example uses fictional statistics and contains no backend code, credentials or player database.
+
 ## Supported games
 
 AOE Scout provides dedicated pages and game-aware data for:

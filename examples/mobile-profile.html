@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>AOE Scout — Responsive profile example</title>
+  <style>
+    :root{color-scheme:dark;--canvas:#090d12;--panel:#111a23;--tile:#17232f;--line:#202c37;--text:#e5eaf0;--secondary:#8996a5;--gold:#d6a447;--positive:#45b893;--negative:#d76a70}
+    *{box-sizing:border-box}body{margin:0;background:var(--canvas);color:var(--text);font:400 15px/1.5 system-ui,sans-serif}main{max-width:1000px;margin:auto;padding:32px 16px}h1{font-size:28px;font-weight:500}h2{font-size:18px;font-weight:500;margin:0}h3{font-size:15px;font-weight:500}p{color:var(--secondary)}a{color:var(--gold)}.panel{padding:20px;margin:12px 0;border-radius:8px;background:var(--panel)}.identity{display:grid;grid-template-columns:1fr 1fr;gap:16px}.identity p{margin:4px 0}.details{display:grid;gap:8px}.compare{grid-column:1/-1;padding:10px 14px;border:1px solid var(--line);border-radius:6px;text-align:center;text-decoration:none}.ranks{display:grid;grid-template-columns:1fr 1fr;gap:12px}.rank{min-width:0}.card{background:var(--tile);border-radius:6px;padding:16px}.card h3{color:var(--gold);margin:4px 0 12px}.metrics{display:flex;justify-content:space-between;gap:12px}.metrics span{display:block;font-size:12px;color:var(--secondary)}.positive{color:var(--positive)}table{width:100%;margin-top:8px;border-collapse:collapse}th,td{padding:10px 8px;border-bottom:1px solid var(--line);text-align:left;font-size:13px;font-weight:400}th{background:#17232e;color:var(--secondary)}.filters{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:16px 0}.filters label{min-width:0;font-size:12px;color:var(--secondary)}select{display:block;width:100%;min-width:0;margin-top:6px;padding:10px;border:1px solid var(--line);border-radius:6px;background:#030e18;color:var(--text);font:inherit}.note{font-size:12px}.matchups{overflow:auto}
+    @media(max-width:640px){main{padding:16px 12px}.panel{padding:16px}.identity{grid-template-columns:1fr}.details{display:none}.ranks{grid-template-columns:1fr}.compare{margin-top:0}.filters{gap:10px}}
+    @media(max-width:380px){.filters{grid-template-columns:1fr}}
+  </style>
+</head>
+<body><main>
+  <a href="../index.html">← AOE Scout showcase</a>
+  <h1>Clearer profiles on smaller screens</h1>
+  <p class="note">Interface illustration with fictional statistics — not live player data. Resize the page to compare mobile and desktop layouts.</p>
+  <section class="panel identity" aria-label="Player identity">
+    <div><h2>Example Player</h2><p>Age of Empires IV</p></div>
+    <div class="details"><span>Player name: Example Player</span><span>Public profile: illustrative example</span><span>Player ID: example only</span></div>
+    <a class="compare" href="https://aoescout.com/age-of-empires-4/compare/players">Compare players →</a>
+  </section>
+  <div class="ranks">
+    <section class="panel rank" aria-label="Solo rank and history">
+      <div class="card"><h2>Solo ranked</h2><h3>Platinum I</h3><div class="metrics"><div>1,420<span>Points</span></div><div>80<span>Games</span></div><div class="positive">55.0%<span>Win rate</span></div></div></div>
+      <table aria-label="Solo ranked season history"><thead><tr><th>Season</th><th>Rank</th><th>Win rate</th></tr></thead><tbody><tr><td>Example A</td><td>Platinum I</td><td class="positive">55.0%</td></tr><tr><td>Example B</td><td>Gold III</td><td class="positive">52.0%</td></tr></tbody></table>
+    </section>
+    <section class="panel rank" aria-label="Team rank and history">
+      <div class="card"><h2>Team ranked</h2><h3>Gold III</h3><div class="metrics"><div>1,180<span>Points</span></div><div>50<span>Games</span></div><div class="positive">54.0%<span>Win rate</span></div></div></div>
+      <table aria-label="Team ranked season history"><thead><tr><th>Season</th><th>Rank</th><th>Win rate</th></tr></thead><tbody><tr><td>Example A</td><td>Gold III</td><td class="positive">54.0%</td></tr></tbody></table>
+    </section>
+  </div>
+  <section class="panel" aria-label="Civilization matchups"><h2>Matchups</h2>
+    <div class="filters"><label>Your civilization<select><option>All civilizations</option><option>English</option></select></label><label>Opponent civilization<select><option>All civilizations</option><option>French</option></select></label></div>
+    <div class="matchups"><table><thead><tr><th>Matchup</th><th>Win rate</th><th>Games</th></tr></thead><tbody><tr><td>English vs French</td><td class="positive">55.0%</td><td>20</td></tr></tbody></table></div>
+  </section>
+  <p class="note">The live product includes game-specific data and rank artwork. This public example focuses on responsive layout and readable labels.</p>
+</main></body>
+</html>
